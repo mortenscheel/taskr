@@ -69,7 +69,7 @@ it('renders output correctly', function (array $tasks, Config $config, string $e
     $buffer = new BufferedOutput;
     Taskr::make($tasks, $buffer, $config)->run();
     // Replaces ANSI sequences for resetting the output with a simple string.
-    $output = preg_replace("/(\x1b\[\d+[A-Z])+/", "RESET\n", $buffer->fetch());
+    $output = preg_replace("/(\x1b\[\d+[A-Z])+/", 'RESET'.PHP_EOL, $buffer->fetch());
     expect($output)->toBe($expected);
 })->with([
     'simple' => fn (): array => [

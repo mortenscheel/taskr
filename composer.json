@@ -49,10 +49,12 @@
         "sort-packages": true
     },
     "scripts": {
-        "fix": [
+        "fix-test": [
             "@refacto",
             "@lint",
-            "@composer normalize"
+            "@composer normalize",
+            "@test:types",
+            "@test:unit"
         ],
         "lint": "pint",
         "refacto": "rector",
