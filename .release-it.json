@@ -56,7 +56,9 @@
                         "section": "🔥 Hotfixes"
                     }
                 ]
-            }
+            },
+            "infile": "CHANGELOG.md",
+            "header": "# Changelog"
         }
     }
 }
