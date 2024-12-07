@@ -1,0 +1,6 @@
+{
+    "devDependencies": {
+        "@release-it/conventional-changelog": "^9.0.3",
+        "release-it": "^17.10.0"
+    }
+}
